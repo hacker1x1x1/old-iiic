@@ -1,0 +1,421 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Astero
+Version:	1.0
+Last change:	
+Assigned to: 11/07/2016
+Primary use:
+	
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Layout]
+
+* body
+
+	+ Global
+		- Padding/Margin
+		- OW pull-left/pull-right
+		- Section Padding
+	+ Fonts Settings
+		- Montserrat
+		- Open Sans
+	+ Header
+	+ Footer
+	+ Page Banner
+	
+	+ Responsive
+		- min-width: 1200
+		- min-width: 992
+		- max-width: 1366
+		- max-width: 1200
+		- min-width: 992 to max-width: 1200
+		- max-width: 991
+		- min-width: 768 to max-width: 991
+		- max-width: 767
+		- max-width: 639
+		- max-width: 479
+-------------------------------------------------------------------*/
+body {
+	background-color: #fafafa;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #000;
+	position: relative;
+}
+img {
+    max-width: 100%;
+	height: auto;
+}
+a,
+button {
+    outline: 0 !important;
+}
+h1,h2,h3,h4,h5,h6 {
+	word-wrap: break-word;
+}
+
+p {
+    letter-spacing: 0.5px;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 1px !important;
+}
+
+/* + Global */
+	/* - Padding/Margin */
+	.no-padding {
+		padding: 0;
+	}
+	.no-left-padding{
+		padding-left: 0;
+	}
+	.no-right-padding {
+		padding-right: 0;
+	}
+	.no-top-padding {
+		padding-top: 0;
+	}
+	.no-bottom-padding {
+		padding-bottom: 0;
+	}
+	.no-margin {
+		margin: 0;
+	}
+	.no-left-margin {
+		margin-left: 0;
+	}
+	.no-right-margin {
+		margin-right: 0;
+	}
+	.no-top-margin {
+		padding-top: 0;
+	}
+	.no-bottom-margin {
+		margin-bottom: 0;
+	}
+
+	/* - OW pull-left/pull-right */
+	.ow-pull-right {
+		float: right;
+	}
+	.ow-pull-left {
+		float: left;
+	}
+
+
+main {
+	overflow: hidden;
+}
+
+.main-box {
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* - Section Padding */
+.section-padding {
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
+.padding-10 {
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+.padding-20 {
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+.padding-30 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.padding-40 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.padding-50 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.padding-60 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.padding-70 {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.padding-80 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.padding-90 {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.padding-100 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* - Page Header */
+.page-header {
+	border-bottom: none;
+	border-top: 2px solid #746455;
+	position: relative;
+	margin: 0;
+}
+.page-banner {
+	background-image: url("../images/page-header.jpg");
+	background-repeat: no-repeat;
+	height: 180px;
+	position: relative;
+}
+.page-banner::before {
+	content: "";
+	background-color: rgba(51,44,37,0.66);
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.page-breadcrumb {
+	background-color: #746455;
+	padding: 14px 0;
+}
+.page-breadcrumb .breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding: 0;
+}
+.page-breadcrumb .breadcrumb li {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.page-breadcrumb .breadcrumb li,
+.page-breadcrumb .breadcrumb li a {
+	color: #fff;
+}
+.page-breadcrumb .breadcrumb > li + li::before {
+	color: rgba(255,255,255,0.25);
+}
+
+/* - Section Header */
+.section-header {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.section-header-2 {
+	width: 50%;
+}
+.section-header h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	margin-top: 0px;
+	padding-bottom: 24px;
+	position: relative;
+}
+.section-header h3::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 40px;
+	height: 2px;
+	display: inline-block;
+	background-color: #d49d19;
+}
+.section-header p {
+	font-size: 15px;
+	color: #737373;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+.section-header-3 h3 {
+	padding-bottom: 0;
+	font-size: 24px;
+}
+.section-header-3 p {
+	line-height: 30px;
+	color: #4c4c4c;
+}
+.section-header-4 {
+	text-align: center;
+}
+.section-header-4 h3 {
+	padding-bottom: 0;
+	font-size: 24px;
+}
+
+.section-header-5 h3 {
+	font-size: 24px;
+	padding-bottom: 0;
+}
+.section-header-5 h3 mark {
+	background-color: #fbe833;
+	padding: 0;
+}
+
+.section-header-6 h3 {
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	color: #332c25;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+	margin-top: 0 ;
+}
+
+.section-header-7 h3 {
+	font-size: 32px;
+	font-weight: bold;
+}
+.white-text h3 {
+	color: #fff;
+}
+
+.no-bg {
+	background: none !important;
+}
+.no-border {
+	border: none !important;
+}
+
+/* - Section Title */
+.section-title h3 {
+	color: #332c25;
+	font-size: 48px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.block-title h5 {
+    color: #332c25;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+/* - Latest Post Widget */
+/*------------------------------------------------------------------
+	+ Responsive
+-------------------------------------------------------------------*/
+
+/* - min-width: 1200 */
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}	
+}
+
+/* - min-width: 992 */
+@media (min-width: 992px) {
+	
+}
+/* - max-width: 1366 */
+@media (max-width: 1366px) {	
+	
+}
+
+/* - max-width: 1200 */
+@media (max-width: 1200px) {	
+	
+}
+
+/* - min-width: 992 to max-width: 1200 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+/* - max-width: 991 */
+@media (max-width: 991px) {	
+	.section-title h3 {
+		font-size: 44px;
+	}
+
+     .expandable-style-4 .panel-group .panel-heading + .panel-collapse > .panel-body {
+	    padding-left: 30px;
+		padding-right: 30px;
+    }
+}
+
+/* - min-width: 768 to max-width: 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* - max-width: 767 */
+@media (max-width: 767px) {
+	.section-title h3 {
+		font-size: 30px;
+	}
+	.section-header-2 {
+		width: 100%;
+	}
+	/* .row {
+		margin: 0;
+	} */
+}
+
+/* - max-width: 639 */
+@media (max-width: 639px) {
+	
+}
+
+/* - max-width: 479 */
+@media (max-width: 479px) {
+	/* - Section Header */
+	.section-header h3 {
+		font-size: 24px;
+		padding-bottom: 15px;
+	}
+	
+	.section-title h3 {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	
+	.block-title h5 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.recruit {
+	background-color: #332c25;
+	font-size: 20px;
+	padding: 18px 68px;
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 30px;
+	border-radius: 0;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.contact-form.form-style-3.form-control {
+	text-transform: none !important;
+}
+
+.contact-form.form-style-3.form-control {
+	text-transform: none !important;
+}
