@@ -1,104 +1,172 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-	<title>IIITA Info Communication Incubation Center</title>
-
-	<!-- Standard Favicon -->
-	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
-
-	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Evento -Event Html Template">
+    <meta name="keywords" content="Evento , Event , Html, Template">
+    <meta name="author" content="ColorLib">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>IIITA Info Communication Incubation Center</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
 	
-	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
- 
-	<!-- RS5.0 Layers and Navigation Styles -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
-	
-	<!-- Custom - Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="styles.css" />
-
-	<!--[if lt IE 9]>
-		<script src="js/html5/respond.min.js"></script>
-    <![endif]-->
-	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 
-<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
-<div class="main-box">
-	<a id="top"></a>
-	
+<style media="stylesheet">
+  @media (max-width: 767px)
+.icon1 {
+    max-width: 150px;
+}
+</style>
+<style>
+  #team_button:hover{
+    background-color: #18181c;
+  }
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 16px;
+    font-size: 16px;
+    border: none;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-		<!-- Header Section -->
-	<header id="header" class="header-section header-section-7 header-position container-fluid no-padding">
-		<!-- Menu Block -->
-		<div class="container-fluid no-padding menu-block">
-			<div class="container">
-				<div class="top-header container-fluid no-padding">
-					<a class="logo-block"><img src="images/logo7.png" alt="Logo" />Info Communication Incubation Center</a>
-				</div>
-				<!-- nav -->
-				<nav class="navbar navbar-default ow-navigation">
-					<div class="navbar-header">
-						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a href="/" class="navbar-brand"><img src="images/logo7.png" alt="Logo" />Info Communication Incubation Center</a>
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+<body>
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
+
+<!--header start here -->
+<header id="navbar" class="header navbar fixed-top navbar-expand-md" style="background-color:#18181c; padding-top: 15px; padding-bottom:15px;">
+    <div class="container" class="head1">
+        <a class="navbar-brand logo" href="index.php">
+            <img class="icon1" style="padding-top:0px; max-width:270px;" src="assets/img/iiic_white.png" alt="Evento"/>
+        </a>
+	</div>
+	<div style="width:200%" class="container" class="head2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-text-align-right"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+            <ul class=" nav navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.php">Why IIIC?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.php">Our Association</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link " href="student_team.php">Student Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="faculty_team.php">Faculty Team</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="events.php">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="apply.php">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="got-a-problem.php">Got A Problem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="got-a-problem.php">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="product-dev.php">Product Dev</a>
+                </li>
+				<div class="dropdown">
+                <li class="dropdown nav-item"  style="position: relative; top: 10px;">
+                    <button class="btn btn-default dropdown-toggle" id="team_button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Team
+                      <span class="caret"></span>
+                    </button>
+					<div class="dropdown-content">
+					<a href="faculty_team.php">Faculty team</a>
+                    <a href="student_team.php">Student team</a>
 					</div>
-					<div class="navbar-collapse collapse" id="navbar">
-						<ul class="nav navbar-nav">
-							<li class="active dropdown mega-dropdown">
-								<a href="/" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown">
-								<a href="/about-iiic.php" title="About IIIC" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">About IIIC</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown mega-dropdown">
-								<a href="why-iiic.php" title="Why IIIC" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Why IIIC</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown">
-								<a href="submit-ideas.php" title="Submit Ideas" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Submit Ideas</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown">
-								<a href="apply.php" title="Apply" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Apply</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown">
-								<a href="events.php" title="Events" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown mega-dropdown">
-								<a href="team.php" title="Team" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-							<li class="dropdown">
-								<a href="contact.php" title="Contacts" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contacts</a>
-								<i class="ddl-switch fa fa-angle-down"></i>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</nav><!-- nav /- -->
-			</div>
-		</div><!-- Menu Block /- -->
-		
-	</header><!-- Header Section /- -->
-	
+                </li>
+				</div>
+
+				        <li class="nav-item">
+                    <a class="nav-link " href="contacts.php">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link " href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+                <li class="search_btn">
+                    <a  href="#">
+                       <i class="ion-ios-search"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</header>
+<!--header end here-->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>

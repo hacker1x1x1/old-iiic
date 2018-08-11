@@ -1,0 +1,533 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position:relative;
+	text-align: right;
+}
+.center .sf-menu{
+	float:none;
+	display: inline-block;
+	text-align: center;
+}
+
+.sf-menu li {
+	position: relative;
+}
+
+
+
+.sf-menu a {
+	display: block;
+	position:relative;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	margin-bottom: 0;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:600;
+}
+
+.sf-menu a {
+	padding: 0 18px;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+	color: #fff;
+}
+.sf-menu a#sign_in {
+	background-color:#252525;
+	}
+.sf-menu li {
+	background: ;
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+
+ul.sf-menu li a.{
+	color:#fff;
+	padding-left: 20px;
+}
+ul.sf-menu li a:hover,
+.current-menu-item a{
+	outline:none;
+}
+
+.sf-menu ul li {
+	min-width:200px;
+}
+
+ul.slimmenu.sf-menu > li a:after{
+  content : "";
+}
+
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+	padding : 0 18px;
+	line-height: 45px;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: #30d9a4; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #30d9a4; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+#mobnav-btn:before {
+    display: none;
+	font-family: "fontello";
+	 content: "\e874";
+    font-size: 24px;
+	width:24px;
+	height:24px;
+    color: white;
+	cursor:pointer;
+}
+.mobnav-subarrow {
+    display: none;
+}
+
+.sf-menu.search-menu .menu-item{
+	padding-bottom: 0px;
+}
+.sf-menu .menu-item .menu-item{
+	display: block;
+	float: none;
+	padding-bottom: 0px;
+	position: relative;
+}
+.sf-menu .menu-item .menu-item i{
+	position: absolute;
+    right: 0px;
+    top:15px;
+    color:#fff;
+    line-height: inherit;
+    margin-right: 10px;
+}
+.sf-menu .menu-item .menu-item.mega-sub-menu{
+	display: inline-block;
+	float: left;
+}
+.sf-menu .menu-item.menu-item-mega{
+	position: static;
+	display: inline-block;
+	white-space: nowrap;
+}
+.sf-menu .menu-item-mega > a{
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+
+
+
+ul.sf-menu .mega-menu-container {
+	display: none;
+	background-size:cover;
+  	position: absolute;
+    z-index: 1000;
+    padding: 60px 50px;
+    background-color: #111;
+    box-shadow: none;
+ 	text-align: left; 	
+}
+.cbp-af-header-shrink ul.sf-menu .mega-menu-container:before{
+	border:0px;
+}
+.sf-menu .mega-menu-container .mega-sub-menu > a{
+	line-height: 22px;
+	padding:6px 0;
+	margin-bottom:0;
+	font-weight:500;
+	color:#fff;
+	font-size: 10px;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.sf-menu .mega-menu-container .mega-sub-menu.menu-title > a{
+	padding: 0;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: calc(100% - 20px);
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.sf-menu .mega-menu-container .mega-menu-columns .grid-container3 a{
+	line-height: 22px;
+	padding:6px 0;
+	margin-bottom:0;
+	font-weight:500;
+	color:#fff;
+	font-size: 10px;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-right: 25px;
+}
+ul.sub-menu li i{
+	margin-left:0;
+	padding-left:0;
+	text-align:left;
+}
+
+
+/** VERSION 1.3 New CSS  ==================== **/	
+ul.mega_submenu.icons li{
+	position:relative;
+}
+.mega-menu-container ul.sub-menu i{
+	position:absolute;
+	right:25px;
+}
+/**  End Version 1.3 Updated  **/	
+
+.sf-menu .right:hover > div:before {
+	right: 24px;
+	left: auto;
+}
+
+.sf-menu li div.mega-sub-menu:hover  > div {
+	left: 100%;
+	right: auto;
+	top:-20px;
+}
+.sky-mega-menu li div.mega-sub-menu:hover > div:before {
+	display:none;
+}
+.sf-menu li div.mega-sub-menu:hover > div {
+    right: 100%;
+    left: auto;
+}
+.sf-menu > .sub-menu {
+    position: absolute;
+    z-index: 1000;
+    padding: 20px 20px;
+    top: 100%;
+    left: -9999px;
+    margin-top: 10px;
+    background-color: rgba(20,20,20,1);
+    box-shadow: none;
+    opacity: 0;
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -o-transition: -o-transform 0.1s, opacity 0.1s;
+    -ms-transition: -ms-transform 0.1s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.1s, opacity 0.1s;
+    -webkit-transition: -webkit-transform 0.1s, opacity 0.1s;
+}
+
+.sf-menu .grid-container2 .title-menu.menu-item > a,.sf-menu .mega-menu-columns .title-menu.menu-item > a {
+	letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(80,80,80,.9);
+    line-height: 21px;
+}
+.sf-menu .mega-menu-columns .title-menu.menu-item > a{
+	margin-right: 15px;
+}
+.sf-menu .grid-container2 .padding-top-15.title-menu.menu-item > a,.sf-menu .mega-menu-columns .padding-top-15.title-menu.menu-item > a{
+	padding-top: 15px;
+}
+.sf-menu .grid-container2 .title-menu.menu-item > a:hover,.sf-menu .mega-menu-columns .title-menu.menu-item > a:hover{
+	padding-left: 0;
+	background-color: #111;
+}
+.sf-menu .grid-container2 .menu-item-has-children i{
+	position: absolute;
+	right: 0px;
+    line-height: inherit;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.sf-menu .grid-container2 i, .sf-menu .mega-menu-columns i {
+	display: inline-block;
+    width: 12px;
+    float: none;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+    line-height: inherit;
+}
+.sf-menu .grid-container2 .menu-item-has-children .mega-menu-columns i{
+	display: inline-block;
+    width: 12px;
+    float: none;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+    line-height: inherit;
+}
+.sf-menu .grid-container2 .menu-item-has-children .mega-menu-columns li a{
+	padding-left: 20px;
+}
+.sf-menu li:hover li > div{
+	left: 100%;
+    right: auto;
+    top: -20px;
+}
+.dark-menu-background {
+    top: 50px;
+    background: rgba(40,40,40,0);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.new-menu{
+	vertical-align: super;
+    font-size: 8.5px;
+    line-height: 8.5px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+#menu-wrap .container .columns.multi-page, #menu-wraps .container .columns.multi-page{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.multi-page .logo{
+	top:45px;
+}
+ul.slimmenu.sf-menu {
+    margin: 0 auto;
+    width: auto;
+    float: right;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul.slimmenu.sf-menu > li{
+	padding-left: 0px;
+}
+ul.slimmenu.sf-menu > li.right ul,
+ul.slimmenu.sf-menu > li.right .mega-menu-container {
+	right: 0!important;
+}
+ul.slimmenu.sf-menu > li a {
+    text-decoration: none;
+    padding: 50px 22px;
+    margin: 0px;
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.cbp-af-header.cbp-af-header-shrink ul.slimmenu.sf-menu > li > a{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+ul.slimmenu.sf-menu li ul.normal-sub{
+	min-width: 240px;
+    left: auto;
+    padding: 10px 20px;
+    background: #111;
+}
+ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+ul.slimmenu.sf-menu > li  ul  li a {
+    padding: 1em 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #c5c5c5;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: calc(100% - 20px);
+    display: block;
+}
+ul.slimmenu.sf-menu li ul li a{
+	color: #f1f1f1;
+}
+ul.sf-menu li ul li a:hover{
+	color: #fff;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-12{
+	width: 100%;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-6{
+	width: 50%;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-4{
+	width: 33.33%;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-3{
+	width: 25%;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-8{
+	width: 66.66%;
+}
+.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-9{
+	width: 75%;
+}
+ul.slimmenu.sf-menu li .sub-collapser{
+	width: 0px;
+}
+ul.slimmenu.sf-menu li > ul > li ul.normal-sub{
+	top:-10px;
+	left: 100%;
+	right:auto;
+}
+ul.slimmenu.sf-menu li .mega-menu-container ul.normal-sub{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.menu-mobile i {    
+    font-size: 28px;    
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 0;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+ul.slimmenu.sf-menu > li i{
+	display: none;
+}
+ul.slimmenu.sf-menu > li li i{
+	display: inline-block;
+}
+
+.menu-mobile {
+	display: none;
+	padding-top: 40px;
+    padding-bottom: 40px;
+}
+ul.slimmenu.sf-menu li ul{
+	box-shadow: none;
+}
+@media (max-width: 1199px) {
+	.menu-mobile {
+		display: block;
+	}
+	.sf-menu{display: none;}
+	ul.slimmenu.sf-menu > li a{
+		padding: 20px 0px!important;
+	}
+	ul.sf-menu.show-on-mobile {
+    	display: block;
+	}
+	ul.slimmenu.sf-menu > li{
+		display: block;
+	}
+	.multi-page .logo{
+		top:30px;
+	}
+	.sf-menu .menu-item.menu-item-mega{
+		display: block;
+		position: relative;
+	}
+	ul.slimmenu.sf-menu > li i,ul.slimmenu.sf-menu > div.mega-menu-container i {
+		display: block;
+		color: #fff;
+		position: absolute;
+		top: 15px;
+		right:0;
+		line-height: inherit;
+		z-index: 99999;
+	    background: #212121;
+    	padding: 5px 12px;
+    	cursor: pointer;
+    	font-size: 15px;
+	}
+	li.menu-item-has-children:before {
+	    content: "\f489";
+	    font-family: "Ionicons";
+	    display: none;
+	    cursor: pointer;
+	    float: right;
+	    padding: 8px 12px;
+	    background: #212121;
+	    color: #fff;
+	}
+  	ul.slimmenu.sf-menu{
+		float: none;
+	    text-align: left;
+  	}
+  	ul.slimmenu.sf-menu li ul.normal-sub{
+		position: relative;
+		background: transparent;
+		text-align: left;
+		box-shadow: none;
+	}
+	ul.slimmenu.sf-menu li > ul > li ul.normal-sub{
+		left:0px;
+	}
+	ul.sf-menu .mega-menu-container{
+		background: transparent!important;
+		position: relative;
+		box-shadow: none;
+		width:100%!important;
+	}
+	ul.sf-menu >li.menu-item-mega:hover .mega-menu-container{
+		display: none;
+	}
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-12,
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-6,
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-4,
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-3,
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-8,
+	.slimmenu.sf-menu .menu-item .menu-item.mega-sub-menu.col-9{
+		width:100%;
+	}
+}

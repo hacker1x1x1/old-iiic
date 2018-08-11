@@ -1,0 +1,51 @@
+ /*about css*/
+
+ 		h1{
+ 			color: #696868;
+ 			margin-bottom: 20px;
+ 		}
+ 		p{
+ 			text-align: justify;
+ 		}
+		.wrapper {
+		  position: relative;
+		  min-height: 200px;
+		}
+		.imageAbout {
+		  height: 200px;
+		  /*background: tomato;*/
+	      outline: 1px solid #e7e7e7 ;
+		  outline-offset: 5px;
+		}
+
+		@media screen and (min-width: 48em) {
+		  .wrapper:before {
+		    content: '';
+		    float: left;
+		    display: block;
+		    width: 400px;
+		    height: 200px;
+		    margin: 0 0 15px 15px;
+		  }
+		  .imageAbout {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 400px;
+		  }
+		}
+		.fa-trophy{
+			margin-right: 8px;
+		}
+		.gold{
+			color: gold;
+		}
+		.silver{
+			color: silver;
+		}
+.tab-pane{
+	margin-top: 46px;
+}
+.post{
+	margin-bottom: 30px;
+}

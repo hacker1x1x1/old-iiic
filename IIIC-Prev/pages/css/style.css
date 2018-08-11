@@ -1,0 +1,26 @@
+p{
+	font-size: 17px !important; 
+}
+h1{
+	text-align:center;
+}
+.nav-tabs li a{
+	position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.why-we{
+	margin-top: 12px;
+}
+.nav-tabs{
+	font-size: 20px;
+}
+h1.dark{
+	font-size: 25px;
+}
+.why-we .header{
+	font-weight: 600;
+}
+.col-xs-12.t-left{
+	padding:0px;
+}

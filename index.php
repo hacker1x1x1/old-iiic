@@ -1,223 +1,624 @@
 <?php
 
-    include("header.php");
+include("header.php");
 
 ?>
 
-<main>
-	<!-- Slider Section -->
-	<div id="home-revslider" class="homeslider-section-7 container-fluid no-padding ">
-		<!-- START REVOLUTION SLIDER 5.0 -->
-		<div class="rev_slider_wrapper">
-			<div id="home-slider7" class="rev_slider" data-version="5.0">
-				<ul> 
-					<li data-transition="fade" data-slotamount="1"  data-easein="default" data-easeout="default" data-masterspeed="1500"> 
-						<!-- MAIN IMAGE -->
-						<img src="images/placeholder1.jpg" alt="home1"  width="1220" height="1032"> 
-						<!-- LAYER NR. 1 -->
-						<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-1" 
-							data-x="['left','left','left','left']" data-hoffset="['360','360','360','360']" 
-							data-y="['top','top','top','top']"  data-voffset="['530','530','530','530']" 
-							data-fontsize="['32','32','32','32']"
-							data-lineheight="['30','30','30','30']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-							data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-							data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-							data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-							data-start="1000" 
-							data-splitin="chars" 
-							data-splitout="none" 
-							data-responsive_offset="on"
-							data-elementdelay="0.05"							
-							style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing:0; font-family: 'Montserrat', sans-serif; text-transform: lowercase;">IIITA
-						</div>
-						<!-- LAYER NR. 2 -->
-						<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
-							id="slide-1-layer-2" 
-							data-x="['left','left','left','left']" data-hoffset="['358','358','358','358']" 
-							data-y="['top','top','top','top']" data-voffset="['580','420','420','420']" 
-							data-fontsize="['56','56','56','56']"
-							data-lineheight="['50','50','50','50']"
-							data-width="auto"
-							data-height="none"
-							data-whitespace="noraml"
-							data-transform_idle="o:1;"
-							data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-							data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-							data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-							data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-							data-start="1500" 
-							data-splitin="none" 
-							data-splitout="none"							
-							data-responsive_offset="on"	
-							style="z-index: 6; position:relative; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: bold; color: #fff; letter-spacing:0;">Info Communication Incubation Center
-						</div>
-					</li>
-					<li data-transition="fade" data-slotamount="1"  data-easein="default" data-easeout="default" data-masterspeed="1500"> 
-						<!-- MAIN IMAGE -->
-						<img src="images/placeholder3.jpg" alt="home1"  width="1920" height="1032"> 
-						
-						<!-- LAYER NR. 1 -->
-						<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-2-layer-1" 
-							data-x="['left','left','left','left']" data-hoffset="['360','360','360','360']" 
-							data-y="['top','top','top','top']"  data-voffset="['530','530','530','530']" 
-							data-fontsize="['32','32','32','32']"
-							data-lineheight="['30','30','30','30']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-							data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-							data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-							data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-							data-start="1000" 
-							data-splitin="chars" 
-							data-splitout="none" 
-							data-responsive_offset="on"
-							data-elementdelay="0.05"							
-							style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing:0; font-family: 'Montserrat', sans-serif; text-transform: lowercase;">Got an Idea?
-						</div>
+<main style="background-color:#EAF2F8;" >
+<!--cover section slider -->
+<section id="home" class="home-cover">
+    <div class="cover_slider owl-carousel owl-theme">
+        <div class="cover_item" style="background: url('assets/img/bg/iiita3.jpg'); opacity: 0.8; filter: blur(1px);">
+             <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-center">
+                            <h2 class="cover-title">
+                                iiita
+                            </h2>
+                            <strong style="color:#85C1E9; opacity:10; filter: blur(0px);" class="cover-xl-text">Info communication <br> incubation center</strong>
+                            <!-- <p class="cover-date">
+                                12-14 February 2018  - Los Angeles, CA.
+                            </p> -->
+                            <!-- <a href="#" class=" btn btn-primary btn-rounded" >
+                                Buy Tickets Now
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cover_item" style="background: url('assets/img/bg/iiita1.jpg'); opacity: 0.8; filter: blur(1px);">
+            <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-left">
+                            <h2 class="cover-title">
+                                Fostering
+                            </h2>
+                            <strong style="color:#5DADE2; opacity:10; filter: blur(0px);" class="cover-xl-text">entrepreneurship</strong>
+                            <!-- <p class="cover-date">
+                                12-14 February 2018  - Los Angeles, CA.
+                            </p>
+                            <a href="#" class=" btn btn-primary btn-rounded" >
+                                Buy Tickets Now
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cover_item" style="background: url('assets/img/bg/campus9.jpg'); opacity: 0.8; filter: blur(1px);">
+            <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-center">
+                            <h2 class="cover-title">
+                              got an idea?
+                            </h2>
+                            <strong style="color:#3498DB; opacity:10; filter: blur(0px);" class="cover-xl-text" style="font-size: 48px;">convert it into a <br> product!</strong>
+                            <!-- <p class="cover-date">
+                                12-14 February 2018  - Los Angeles, CA.
+                            </p>
+                            <a href="#" class=" btn btn-primary btn-rounded" >
+                                Buy Tickets Now
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--cover section slider end -->
 
-						<!-- LAYER NR. 2 -->
-						<div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
-							id="slide-2-layer-2" 
-							data-x="['left','left','left','left']" data-hoffset="['358','358','358','358']" 
-							data-y="['top','top','top','top']" data-voffset="['580','420','420','420']" 
-							data-fontsize="['56','56','56','56']"
-							data-lineheight="['50','50','50','50']"
-							data-width="auto"
-							data-height="none"
-							data-whitespace="noraml"
-							data-transform_idle="o:1;"
-							data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-							data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-							data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-							data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-							data-start="1500" 
-							data-splitin="none" 
-							data-splitout="none"							
-							data-responsive_offset="on"	
-							style="z-index: 6; position:relative; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: bold; color: #fff; letter-spacing:0;">Convert it into a product!
-						</div>
-					</li>
-				</ul> 				
-			</div><!-- END REVOLUTION SLIDER -->
-		</div><!-- END OF SLIDER WRAPPER -->
-	</div><!-- Slider Section -->
-	
-	<div class="section-padding"></div>
-	<div class="padding-10"></div>
-	
-	<!-- Features Section -->
-	<div class="features-section home7-features container-fluid no-padding">
-		<!-- Container -->
-		<div class="container">
-			<!-- Row -->
-			<div class="row">
-				<div class="col-md-6">
-					<div class="col-md-12 col-sm-12 col-xs-12 no-padding"><div class="fetures-img-block"><img src="http://placehold.it/570x290" alt="Features" /></div></div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 no-padding">
-					<div class="dropcaps-box col-md-12 col-sm-12 col-xs-12">
-						<div class="section-header-6 section-header-7">
-							<h3>Our Vision</h3>
-						</div>
-						<div class="dropcaps-content">
-							<p><span class="square-bg">H</span>elp shifting the spotlight from seeking jobs to creating them. In collaboration with leading investors and field leaders, IIIC incubates the ideas that holds the power to change the world. IIIC brings ideas to fruition
-						</div>
-					</div>
-				</div>
-			</div><!-- Row /- -->
-		</div><!-- Container /- -->
-	</div><!-- Features Section /- -->
-	<div class="section-padding"></div>
-	
-	<div class="padding-70"></div>
-	
-	<!-- Blog Section -->
-	<div class="blog-section blog_masonry blogfullwidth_2col blogfullwidth_3col">
-		<!-- Container -->
-		<div class="container">	
-			<div class="row">
-				<div class="blog-masonry-list">
-					<div class="col-md-4 col-sm-6 col-xs-6 blog-masonry-box">
-						<article class="type-post image-post">
-							<h3 class="entry-title"><a href="#" title="There have not been any since we have lived here">There have not been any since we have lived here</a></h3>
-							<div class="entry-cover">
-								<a title="Cover" href="#"><img alt="blog" src="http://placehold.it/570x219"></a>
-							</div>
-							<div class="post-by">
-								<a href="#"><img src="http://placehold.it/40x40" alt="blogauthor"/>Zachary Bush</a> in <a href="#" title="Life blog">Life blog</a>
-							</div>
-							<div class="entry-content">
-								<p>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground... </p>
-							</div>
-							<div class="entry-meta">
-								<div class="post-share">
-									<a href="#" title="17"><i class="fa fa-share-alt" aria-hidden="true"></i>17</a>
-								</div>
-								<div class="post-date">
-									<a href="#" title="26 September 2016, 7:58 PM"><i class="fa fa-clock-o" aria-hidden="true"></i>26 September 2016, 7:58 PM</a>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6 blog-masonry-box">
-						<article class="type-post image-post">
-							<h3 class="entry-title"><a href="#" title="Thus much I thought proper to tell you in relation to yourself">Thus much I thought proper to tell you in relation to yourself</a></h3>
-							<div class="entry-cover">
-								<a title="Cover" href="#"><img alt="blog" src="http://placehold.it/370x142"></a>
-							</div>
-							<div class="post-by">
-								<a href="#"><img src="http://placehold.it/40x40" alt="blogauthor"/>Zachary Bush</a> in <a href="#" title="Life blog">Life blog</a>
-							</div>
-							<div class="entry-content">
-								<p>I confess this side of the country was much pleasanter than mine; but yet I had not the least inclination to remove, for as I was fixed in my habitation it became natural to me, and I seemed all the while I was here to be as it were upon a journey, and from home...</p>
-							</div>
-							<div class="entry-meta">
-								<div class="post-share">
-									<a href="#" title="17"><i class="fa fa-share-alt" aria-hidden="true"></i>21</a>
-								</div>
-								<div class="post-date">
-									<a href="#" title="26 September 2016, 7:58 PM"><i class="fa fa-clock-o" aria-hidden="true"></i>26 September 2016, 7:58 PM</a>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6 blog-masonry-box">
-						<article class="type-post image-post">
-							<h3 class="entry-title"><a href="#" title="Tumblers restored Bob Sawyer to a degree">Tumblers restored Bob Sawyer to a degree</a></h3>
-							<div class="entry-cover">
-								<a title="Cover" href="#"><img alt="blog" src="http://placehold.it/370x180"></a>
-							</div>
-							<div class="post-by">
-								<a href="#"><img src="http://placehold.it/40x40" alt="blogauthor"/>Zachary Bush</a> in <a href="#" title="Life blog">Life blog</a>
-							</div>
-							<div class="entry-content">
-								<p>I confess this side of the country was much pleasanter than mine but yet I had not the least inclination to remove, for as I was fixed in my habitation it became natural to me... </p>
-							</div>
-							<div class="entry-meta">
-								<div class="post-share">
-									<a href="#" title="17"><i class="fa fa-share-alt" aria-hidden="true"></i>24</a>
-								</div>
-								<div class="post-date">
-									<a href="#" title="26 September 2016, 7:58 PM"><i class="fa fa-clock-o" aria-hidden="true"></i>26 September 2016, 7:58 PM</a>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div><!-- Container /- -->
-	</div><!-- Blog Section /- -->
-	<div class="padding-60"></div>
-	<div class="padding-30"></div>
-	
+<!--event info -->
+<!-- <section class="pt100 pb100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-calendar-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            DATE
+                        </h5>
+                        <p>
+                            12-14 february 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-location-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            location
+                        </h5>
+                        <p>
+                            Los Angeles, CA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-person-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            speakers
+                        </h5>
+                        <p>
+                            Natalie James
+                            + guests
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-pricetag-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            tikets
+                        </h5>
+                        <p>
+                            $65 early bird
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--event info end -->
+
+
+<!--event countdown -->
+<!-- <section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/bg-img.png');">
+    <div class="overlay_dark"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h4 class="mb30 text-center color-light">Counter until the big event</h4>
+                <div class="countdown"></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--event count down end-->
+
+
+<!--about the event -->
+<section class="pt100 pb100">
+    <div class="container">
+        <div class="section_title">
+            <h3 class="title">
+                Who are we?
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-15">
+                <p style="font-style: italic">
+                'The smallest company in the world can look as large as the biggest company on the web'- Steve Jobs IIIC, formally known as IIITA Info-Communication Incubation Center is a one-stop platform for individuals with creative minds and innovating ideas to come up and fulfill their dreams and aspirations to become successful future entrepreneurs. After all, 'An entrepreneur isn't someone who owns a business, it's someone who makes things happen.' 
+                <br>
+                <p style="text-align: center">- Tim Ferriss.</p>
+                </p>
+                
+                <p>
+                IIIC, a Business incubator is set up under the aegis of IIITA catalyzed and supported by the department of Electronics and Technology under the Startup India project by the Govt. of India.  
+                </p>
+            </div>
+        </div>
+
+        <div class="section_title">
+            <h3 class="title">
+              Our Vision
+            </h3>
+        </div>
+		<p><b>'It's not about ideas, it's about making ideas happen.'<b></p>
+		<p>We aim to create an entrepreneurial ecosystem and foster innovation across the country by:</p>
+
+
+        <!--event features-->
+        <div class="row justify-content-center mt30">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <!-- <i class="lnr lnr-mic"></i> -->
+                    <div class="content">
+                        <!-- <h4>9 Speakers</h4> -->
+                        <p>
+                          Incubating promising, innovative startups and aspiring entrepreneurs.
+                        </p>
+                        <!-- <a href="#">read more</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <!-- <i class="lnr lnr-mic"></i> -->
+                    <div class="content">
+                        <!-- <h4>9 Speakers</h4> -->
+                        <p>
+                        Providing startups with apt skills, technology, legal advisory, chartered accountants and Intellectual Property Rights experts for their business.  
+                        </p>
+                        <!-- <a href="#">read more</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <!-- <i class="lnr lnr-mic"></i> -->
+                    <div class="content">
+                        <!-- <h4>9 Speakers</h4> -->
+                        <p>
+                           Equipping them with funding, infrastructure and other resources.
+
+                        </p>
+                        <!-- <a href="#">read more</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <!-- <i class="lnr lnr-mic"></i> -->
+                    <div class="content">
+                        <!-- <h4>9 Speakers</h4> -->
+                        <p>
+                         Providing recruitment to the students of the Institute as interns and part time workers.
+                        </p>
+                        <!-- <a href="#">read more</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="section_title">
+            <h3 class="title">
+               Our Mission 
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-15">
+                <p>We, at IIIC, unlock the young minds by not only showing them the doors of opportunity but also equipping them with apt resources and technology to take entrepreneurship a step ahead in India and let the youth discover the hidden entrepreneur in them. Say welcome to your dreams at IIIC.
+
+                </p>
+            </div>
+        </div>
+        <!--event features end-->
+    </div>
+</section>
+<!--about the event end -->
+
+
+<!--speaker section-->
+<!-- <section class="pb100">
+    <div class="container">
+        <!-- <div class="section_title mb50"> -->
+            <!-- <h3 class="title">
+               our speakers
+            </h3>
+        </div>
+    </div>
+    <div class="row justify-content-center no-gutters">
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s1.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Patricia Stone</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s2.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">James Oliver</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s3.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Carla Banks</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s4.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">William Smith</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s5.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Jessica Black</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s6.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Patricia Stone</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s7.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Duncan Stan</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s8.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Patricia Stone</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --> -->
+<!--speaker section end -->
+
+<!--Price section-->
+<!-- <section class="pb100">
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+                Pricing table
+            </h3>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_highlight">
+                        recommended
+                    </div>
+                   <div class="price_header">
+                       <h4>
+                           Early Bird
+                       </h4>
+                       <h6>
+                           For the fast ones
+                       </h6>
+                   </div>
+                    <div class="price_tag">
+                        65 <sup>$</sup>
+                    </div>
+                    <div class="price_features">
+                        <ul>
+                            <li>
+                                Early Entrance
+                            </li>
+                            <li>
+                                Front seat
+                            </li>
+                            <li>
+                                Complementary Drinks
+                            </li>
+                            <li>
+                                Promo Gift
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price_footer">
+                        <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box">
+                    <div class="price_header">
+                        <h4>
+                            Start up
+                        </h4>
+                        <h6>
+                            For the begginers
+                        </h6>
+                    </div>
+                    <div class="price_tag">
+                        85 <sup>$</sup>
+                    </div>
+                    <div class="price_features">
+                        <ul>
+                            <li>
+                                Early Entrance
+                            </li>
+                            <li>
+                                Front seat
+                            </li>
+                            <li>
+                                Complementary Drinks
+                            </li>
+                            <li>
+                                Promo Gift
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price_footer">
+                        <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box">
+                    <div class="price_header">
+                        <h4>
+                            Corporate
+                        </h4>
+                        <h6>
+                            For the business
+                        </h6>
+                    </div>
+                    <div class="price_tag">
+                        95 <sup>$</sup>
+                    </div>
+                    <div class="price_features">
+                        <ul>
+                            <li>
+                                Early Entrance
+                            </li>
+                            <li>
+                                Front seat
+                            </li>
+                            <li>
+                                Complementary Drinks
+                            </li>
+                            <li>
+                                Promo Gift
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price_footer">
+                        <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--price section end -->
+
+<!--event calender-->
+<!-- <section class="pb100">
+    <div class="container">
+        <div class="table-responsive">
+            <table class="event_calender table">
+                <thead class="event_title">
+                <tr>
+                    <th>
+                        <i class="ion-ios-calendar-outline"></i>
+                        <span>next events calendar</span>
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="assets/img/cleander/c1.png" alt="event">
+                    </td>
+                    <td class="event_date">
+                        14
+                        <span>February</span>
+                    </td>
+                    <td>
+                        <div class="event_place">
+                            <h5>Conference in Amsterdam</h5>
+                            <h6>08 AM - 04 PM</h6>
+                            <p>Speaker: Daniel Hill</p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                    </td>
+                    <td class="buy_link">
+                        <a href="#">buy now</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/img/cleander/c2.png" alt="event">
+                    </td>
+                    <td class="event_date">
+                        18
+                        <span>February</span>
+                    </td>
+                    <td>
+                        <div class="event_place">
+                            <h5>Conference in Amsterdam</h5>
+                            <h6>08 AM - 04 PM</h6>
+                            <p>Speaker: Daniel Hill</p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                    </td>
+                    <td class="buy_link">
+                        <a href="#">buy now</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/img/cleander/c3.png" alt="event">
+                    </td>
+                    <td class="event_date">
+                        22
+                        <span>February</span>
+                    </td>
+                    <td>
+                        <div class="event_place">
+                            <h5>Conference in Amsterdam</h5>
+                            <h6>08 AM - 04 PM</h6>
+                            <p>Speaker: Daniel Hill</p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                    </td>
+                    <td class="buy_link">
+                        <a href="#">buy now</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section> -->
+<!--event calender end -->
+
+<!--brands section -->
+<!-- <section class="bg-gray pt100 pb100">
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+                our partners
+            </h3>
+        </div>
+        <div class="brand_carousel owl-carousel">
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/b1.png" alt="brand">
+            </div>
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/b2.png" alt="brand">
+            </div>
+
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/b3.png" alt="brand">
+            </div>
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/b4.png" alt="brand">
+            </div>
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/b5.png" alt="brand">
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--brands section end-->
+
+<!--get tickets section -->
+<!-- <section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
+    <div class="container">
+        <div class="section_title mb30">
+            <h3 class="title color-light">
+                GEt your tikets
+            </h3>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-9 text-md-left text-center color-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+            </div>
+            <div class="col-md-3 text-md-right text-center">
+                <a href="#" class="btn btn-primary btn-rounded mt30">buy now</a>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--get tickets section end-->
+
 </main>
 
 <?php
